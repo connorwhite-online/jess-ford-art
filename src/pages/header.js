@@ -11,7 +11,7 @@ export default function Header() {
                 <Image src={logoImg} alt="Jess Ford" height={100} />
             </div>
             <div className={styles.icons}>
-                <a className={styles.icon} href="https://www.instagram.com/jessford.care/" target="_blank" rel="noreferrer"><Image src={insta} alt="Instagram Link" height={25} width={25}/></a>
+                <a className={styles.icon} href="https://www.instagram.com/jessford.care/" target="_blank" rel="noreferrer"><Image src={insta} alt="Instagram Link"/></a>
                 <a className={styles.icon} href="mailto:jessfordcare@gmail.com"><Image src={email} alt="Email Link"/></a>
             </div>
         </div>
