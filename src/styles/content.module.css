@@ -1,27 +1,28 @@
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
+    padding: 0 0 5vh 0;
 }
 
 .bio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 90vw;
     height: auto;
-    padding: 0 5%;
+    padding: 5vh 5vw;
+    gap: 5vh;
 }
 
 .copy {
-
+    
 }
 
 .image {
-    width: 100vw;
+    width: 100%;
     height: auto;
-    object-fit: contain;
-    position: relative;
 }
 
 /* Desktop */
@@ -29,16 +30,17 @@
     .bio {
         flex-direction: row;
         justify-content: space-between;
-        width: 80%;
+        align-items: flex-start;
+        width: 90vw;
+        padding: 5vh 5vw;
     }
 
     .copy {
-        width: 50%
+        width: 40vw;
     }
     
     .image {
-        width: 30%;
-        object-fit: contain;
+        width: 30vw;
     }
 }
 
