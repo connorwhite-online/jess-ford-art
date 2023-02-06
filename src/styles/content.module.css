@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding: 0 5%;
+}
+
+.copy {
+
+}
+
+.image {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+    .bio {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .copy {
+        width: 50%
+    }
+    
+    .image {
+        width: 30%;
+        object-fit: contain;
+    }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 900px) {
+  
+}
+

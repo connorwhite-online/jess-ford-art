@@ -1,9 +1,9 @@
-import styles from '@/styles/beef.module.css';
-import { Image } from 'next/image';
+import styles from '@/styles/content.module.css';
+import Image from 'next/image';
 import bioPic from '../../public/biopic.png';
 
-export default function Beef() {
-    return(
+export default function Content() {
+    return (
         <div className={styles.container}>
             <div className={styles.bio}>
                 <div className={styles.copy}>

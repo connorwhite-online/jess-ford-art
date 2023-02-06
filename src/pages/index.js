@@ -4,7 +4,7 @@ import styles from '@/styles/Home.module.css'
 
 // Component Imports
 import Header from './header';
-import Beef from './beef';
+import Content from './content';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Header/>
-        <Beef />
+        <Content />
       </main>
     </>
   )
