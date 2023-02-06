@@ -1,12 +1,19 @@
 import styles from '@/styles/content.module.css';
 import Image from 'next/image';
 import bioPic from '../../public/biopic.png';
+import { Baskervville } from '@next/font/google';
+
+const baskervville = Baskervville({ 
+    subsets: ["latin"],
+    weight: "400",
+    styles: ['italic', 'normal'],
+});
 
 export default function Content() {
     return (
         <div className={styles.container}>
             <div className={styles.bio}>
-                <div className={styles.copy}>
+                <div className={styles.copy} style={baskervville.style}>
                     Whether you’re preparing for birth and postpartum, facing the loss of your baby, or are approaching end of life, these profound human experiences require tender support and guidance.
                     <br/>
                     <br/>
@@ -29,7 +36,7 @@ export default function Content() {
                 </div>
             </div>
             <div className={styles.cta}>
-                <button className={styles.button}>Connect</button>
+                <button className={styles.button} style={baskervville.style}>CONNECT</button>
             </div>
         </div>
     )
