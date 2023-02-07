@@ -2,6 +2,7 @@ import styles from '@/styles/content.module.css';
 import Image from 'next/image';
 import bioPic from '../../public/biopic.png';
 import { Baskervville } from '@next/font/google';
+import { circIn, easeIn, motion } from 'framer-motion';
 
 const baskervville = Baskervville({ 
     subsets: ["latin"],
@@ -13,7 +14,7 @@ export default function Content() {
     return (
         <div className={styles.container}>
             <div className={styles.bio}>
-                <div className={styles.copy} style={baskervville.style}>
+                <motion.div className={styles.copy} style={baskervville.style} initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ type: 'spring', bounce: 0, ease: easeIn, duration: 1, delay: 0.5 }}>
                     Whether you’re preparing for birth and postpartum, facing the loss of your baby, or are approaching end of life, these profound human experiences require tender support and guidance.
                     <br/>
                     <br/>
@@ -30,14 +31,14 @@ export default function Content() {
                     <br/>
                     <br/>
                     More to come :&#41;
-                </div>
-                <div className={styles.image}>
+                </motion.div>
+                <motion.div className={styles.image} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: easeIn, delay: 0.5, duration: 1 }}>
                     <Image src={bioPic} alt="Jess Ford" style={{ width: '100%', height: '100%', border: '1px solid #2B3034'}}/>
-                </div>
+                </motion.div>
             </div>
-            <div className={styles.cta}>
-                <a href='https://www.calendly.com/jessfordcare' target="_blank" rel="noreferrer"><button className={styles.button} style={baskervville.style}>CONNECT</button></a>
-            </div>
+            <motion.div className={styles.cta} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                <a href='https://www.calendly.com/jessfordcare' target="_blank" rel="noreferrer"><motion.button className={styles.button} style={baskervville.style} whileTap={{ scale: 0.97 }} whileHover={{ backgroundColor: '#2B3034', color: 'white' }}>CONNECT</motion.button></a>
+            </motion.div>
         </div>
     )
 }
