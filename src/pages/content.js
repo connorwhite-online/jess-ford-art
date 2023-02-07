@@ -32,11 +32,11 @@ export default function Content() {
                     More to come :&#41;
                 </div>
                 <div className={styles.image}>
-                    <Image src={bioPic} alt="Jess Ford" style={{ width: '100%', height: '100%'}}/>
+                    <Image src={bioPic} alt="Jess Ford" style={{ width: '100%', height: '100%', border: '1px solid #2B3034'}}/>
                 </div>
             </div>
             <div className={styles.cta}>
-                <button className={styles.button} style={baskervville.style}>CONNECT</button>
+                <a href='https://www.calendly.com/jessfordcare' target="_blank" rel="noreferrer"><button className={styles.button} style={baskervville.style}>CONNECT</button></a>
             </div>
         </div>
     )
