@@ -2,6 +2,7 @@
     width: 90vw;
     height: auto;
     justify-content: space-between;
+    align-items: flex-start;
     display: flex;
     padding: 2.5vh 5vw;
 }
