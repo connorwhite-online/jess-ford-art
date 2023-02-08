@@ -6,6 +6,28 @@
     padding: 0 0 5vh 0;
 }
 
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5vh;
+    width: 60vw;
+}
+
+.loaderName {
+    order: 2;
+    font-size: 6vw;
+}
+
+.loaderImage {
+    order: 1;
+}
+
+.loaderLocation {
+    order: 3;
+    font-size: 4vw;
+}
+
 .bio {
     display: flex;
     flex-direction: column;
@@ -45,6 +67,28 @@
         width: 90vw;
         padding: 5vh 5vw;
         gap: 0vh;
+    }
+
+    .loader {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 90vw;
+        padding: 5vh 5vw;
+    }
+    
+    .loaderName {
+        order: 1;
+        font-size: 1.5vw;
+    }
+    
+    .loaderImage {
+        order: 2;
+    }
+    
+    .loaderLocation {
+        order: 3;
+        font-size: 1.5vw;
     }
 
     .copy {
