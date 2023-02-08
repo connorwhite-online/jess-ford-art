@@ -9,12 +9,14 @@
 
 .icons {
     display: flex;
-    gap: 1vw;
+    gap: 2vw;
 }
 
 /* Desktop */
 @media (min-width: 901px) {
- 
+    .icons {
+        gap: 1vw;
+    }
 }
 
 /* Tablet and Smaller Desktop */
